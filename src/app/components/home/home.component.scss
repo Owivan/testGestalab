@@ -1,0 +1,30 @@
+
+.main-content {
+    position: relative;
+    z-index: 2;
+    float: right;
+    min-height: 100%;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: all .33s cubic-bezier(.685,.0473,.346,1);
+    max-height: 100%;
+    height: calc(100% - 85px);
+    min-height: calc(100% - 85px);
+    padding-left: 20px;
+    width: calc(100% - 213px);
+
+}
+
+.back {
+    background-color: #021c33f0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+}
+
+.logo {
+    text-align: center;
+    padding: 10px;
+}
