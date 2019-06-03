@@ -2,7 +2,7 @@
 .main-content {
     position: relative;
     z-index: 2;
-    float: right;
+    // float: right;
     min-height: 100%;
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -10,8 +10,9 @@
     max-height: 100%;
     height: calc(100% - 85px);
     min-height: calc(100% - 85px);
-    padding-left: 20px;
-    width: calc(100% - 213px);
+    padding: 20px;
+    margin-left: 250px;
+    // width: calc(100% - 200px);
 
 }
 
@@ -27,4 +28,92 @@
 .logo {
     text-align: center;
     padding: 10px;
+}
+
+.card {
+    border: 0;
+    margin: 18px 0;
+    box-shadow: 0 6px 0 0 rgba(0,0,0,.01), 0 15px 32px 0 rgba(0,0,0,.06);
+    border-radius: 4px;
+}
+
+.h400 {
+    height: 350px;
+    padding-top: 20px;
+}
+.m20 {
+    margin: 20px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt25 {
+    margin-top: 25px;
+}
+.pl10 {
+    padding-left: 10px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.indicate {
+    background: #fbbb21cf;
+}
+
+.target {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    .icon {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.indicator {
+    display: inline-grid;
+
+    .unity {
+        font-size: 22px;
+        color: #856404;
+        line-height: 25px;
+        font-weight: 700;
+
+    }
+    .name {
+        color : #856404;
+        font-size: 23px;
+    }
+}
+
+.badge {
+    background: #ff4b5d;
+    position: absolute;
+    left: 25px;
+    color: #fff;
+    border-radius: 100%;
+}
+.alerts {
+    display: flex;
+}
+.date {
+    .today {
+        font-weight: 600;
+        color: #4f6e8d;
+    }
+    .updateLast {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+    }
+}
+.reload {
+    background: none;
+    border: none;
+}
+.navbar{
+    // position: absolute;
+    // width: 97%;
+    // padding: 0;
 }
