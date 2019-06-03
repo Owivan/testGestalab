@@ -40,3 +40,19 @@ a {
     text-decoration: none;
     background-color: transparent;
 }
+
+.iconSearch {
+    background-image:url(./assets/img/search.svg);
+    background-size: 17px;
+    background-position: center;
+    /* background: red; */
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    margin-top: 3px;
+    left: 8px;
+    background-repeat: no-repeat;
+
+
+}

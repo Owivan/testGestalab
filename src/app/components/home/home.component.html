@@ -1,5 +1,14 @@
 <div class="sidebar">
   <div class="logo"><img src="assets/img/white-logo.png" alt="logo" width="150"></div>
+  <div class="search">
+    <div class="form-group">
+      <small id="emailHelp" class="form-text text-muted">Busca por máquina, fecha o variable</small>
+      <div class="contentSearch">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <div class="iconSearch"></div>
+      </div>
+    </div>
+  </div>
   <ul>
     <li>Inicio</li>
     <li>Salud</li>
@@ -13,31 +22,25 @@
     <li>Ayuda</li>
     <li>Términos y condiciones</li>
     <li>Legales</li>
-
-
-
-
-
   </ul>
   <div class="back"></div>
 </div>
 <div class="main-content">
- <div class="navbar">
+  <div class="navbar">
     <div class="alerts">
         <div class="bell">
-            <img src="assets/img/bell.svg" alt="notification" width="20">
-            <div class="badge">4</div>
+          <img src="assets/img/bell.svg" alt="notification" width="20">
+          <div class="badge">4</div>
         </div>
         <div class="pl10">Ver Alertas</div>
       </div>
       <div class="date">
         <div class="today"><span>{{ today | date }} {{ today | date:'shortTime' }}</span>   </div>
         <div class="updateLast">Ultima actualización {{ update | date :'shortTime'}}
-            <button class="reload" (click)="updateData()"><img src="assets/img/reload.svg" alt="reload" width="15"></button>
-
+          <button class="reload" (click)="updateData()"><img src="assets/img/reload.svg" alt="reload" width="15"></button>
         </div> 
       </div>
- </div>
+  </div>
   <ngb-tabset (tabChange)="onTabChange($event)">
     <ngb-tab title="{{item.nombre}}" *ngFor=" let item of plantas">
       <ng-template ngbTabContent *ngIf="item.nombre == 'Planta 1'" >
@@ -60,7 +63,7 @@
          </div>
          <div class="row">
            <div class="col card">
-             <div class="mt25"><h3>Tendencias</h3></div>
+             <div class="mt10"><h3>Tendencias</h3></div>
             <div class="h400">
               <ngx-charts-line-chart
                 [results]="data"
@@ -171,4 +174,12 @@
          </ng-template>
     </ngb-tab>
   </ngb-tabset>
+  <div class="row">
+    <div class="col">
+      <div class=" justify-content-right">
+          <small id="emailHelp" class="form-text text-muted mr10">by Iván Díaz   </small>
+          <a href="https://github.com/Owivan/testGestalab" target="_blank" ><img src="assets/img/logo-github.svg" alt="logogit"></a>
+      </div>
+    </div>
+  </div>
 </div>

@@ -463,7 +463,6 @@ export class HomeComponent implements OnInit {
   };
 
   onSelect(id){
-    console.log(id);
   }
 
   updateData(){

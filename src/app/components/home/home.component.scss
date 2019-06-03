@@ -38,11 +38,17 @@
 }
 
 .h400 {
-    height: 350px;
+    height: 310px;
     padding-top: 20px;
 }
 .m20 {
     margin: 20px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mt10 {
+    margin-top: 10px;
 }
 .mt20 {
     margin-top: 20px;
@@ -112,8 +118,27 @@
     background: none;
     border: none;
 }
-.navbar{
-    // position: absolute;
-    // width: 97%;
-    // padding: 0;
+.search {
+    padding: 0 20px;
+    .form-group {
+
+        .text-muted {
+            color: #b5bcc1!important;
+        }
+        .form-control {
+            background-color: #ffffff7a!important;
+            color: #021c33f0!important;
+            padding-left: 30px;
+        }
+
+        
+    }
+}
+.contentSearch{
+    position: relative;
+}
+
+.justify-content-right {
+    display: flex;
+    justify-content: flex-end;
 }
