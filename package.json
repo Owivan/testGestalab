@@ -27,7 +27,7 @@
     "@swimlane/ngx-charts": "^11.1.0",
     "angular-wizard-form": "^0.4.1",
     "core-js": "^2.5.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "ngx-wizard": "0.0.46",
     "path": "^0.12.7",
     "rxjs": "~6.3.3",
